@@ -1,0 +1,110 @@
+.sidebar-about img {
+    border: none;
+    border-radius: unset;
+    height: auto;
+    width: auto;
+}
+
+.bullet {
+    margin-bottom: 0.5em
+}
+
+/* The brand is a wrapper (.brand) plus the text inside it (.brand-title,
+   which inherits). Size it once here and the text cannot compound.
+   2.1em = 42px, line-height 1.5 = 63px: the rendering the article pages had
+   before the noise was removed. Both page types must match; the wrapper is an
+   <h1> on the home page and a <div> elsewhere, and those two inherit different
+   line-heights from the theme (1.25 vs 1.5), so line-height is pinned here. */
+.sidebar-about .brand {
+    font-size: 2.1em;
+    line-height: 1.5;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+}
+
+.spoiler {
+    background-color: var(--text-color);
+    transition: 250ms ease-in-out;
+}
+.spoiler:hover {
+    background-color: transparent;
+    transition: 250ms ease-in-out;
+}
+
+a.notfound {
+    filter: brightness(60%)
+}
+
+.portable-infobox {
+    clear: right;
+    float: right;
+    margin: 0 0 1em 1em;
+    width: 50%;
+    border: 1px solid var(--table-border-color);
+    border-radius: 0%;
+    font-size: 90%;
+    box-sizing: content-box;
+}
+
+@media (max-width: 48em) {
+    .portable-infobox {
+        width: 100%;
+        font-size: 100%;
+    }
+}
+
+.pi-title {
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-size: 125%;
+    margin: 0;
+    padding: 0.5em 0;
+    /* background-color: var(--table-stripe-color) */
+}
+
+.pi-header {
+    text-align: center;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-size: 88%;
+    margin: 0;
+    padding: 0.5em 0;
+    background-color: var(--table-stripe-color)
+}
+
+.pi-data {
+    grid-column-gap: 9px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    font-size: 88%;
+    padding: 0.25em 0.5em;
+}
+
+.pi-data-label {
+    text-align: left;
+    flex: 1 1 40%;
+}
+
+.pi-data-value {
+    overflow-wrap: break-word;
+    padding-left: 0;
+    margin-left: 4px;
+    flex: 0 1 60%;
+}
+
+.metaknowledge {
+    padding: 1em;
+    background-color: var(--sidebar-bg-color);
+    margin-bottom: 1em;
+    border-radius: 0.25em;
+}
+.figureimg {
+    margin-bottom: .5em;
+}
+.figcaption {
+    filter: brightness(75%);
+    font-size: 80%
+}

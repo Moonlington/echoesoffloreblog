@@ -1,0 +1,7 @@
+/public
+/content/.obsidian
+*.bat
+# local build output (hugo -d out)
+out/
+.hugo_build.lock
+resources/

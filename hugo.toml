@@ -1,0 +1,95 @@
+baseURL = "https://www.echoesofflore.com/"
+locale = "en-us"
+theme = "poison"
+enableRobotsTXT = true   # renders the theme's layouts/robots.txt, sitemap reference included
+pagination.pagerSize = 10
+pluralizelisttitles = false   # no automatically appended "s" on sidebar entries
+
+refLinksErrorLevel = "WARNING"
+refLinksNotFoundURL = "/404"
+
+[params]
+    # Author metadata must live under params: a root-level [Author] table is not
+    # visible to templates, which silently drops every author and schema tag.
+    author = { name = "Flore" }
+
+    brand = "Echoes of Flore"          # sidebar title
+    tagline = "Games, music and film — the stories that stay with us"
+    # 120-155 chars; this is the fallback meta description for pages that set none.
+    description = "Essays on games, music and film from Flore: what these stories do to us, why they stay, and the ones worth coming back to."
+    brand_image = "/img/logo.png"
+    dark_mode = true
+    image_zoom = true                  # medium-zoom, vendored in the theme
+    favicon = "/android-chrome-512x512.png"
+
+    front_page_content = ["posts"]
+    og_image = "/img/ogimage.jpg"      # 1200x630 social card; front matter images/image win
+
+    menu = [
+        {Name = "Posts", URL = "/posts/", Pre = "Recent posts", HasChildren = true, Limit = 5},
+        # Add when the pages exist:
+        # {Name = "About", URL = "/about/", HasChildren = false},
+    ]
+
+    # Profile links: rendered as sidebar icons and included in the author's
+    # schema.org sameAs list.
+    github_url = "https://github.com/Moonlington"
+    x_url = "https://x.com/FloreVEVO"
+    youtube_url = "https://youtube.com/c/FloreVEVO"
+
+    rss_icon = true
+    rss_section = "posts"
+
+    # Palette. Identical to tabletopflore for now so the two share a look; the
+    # accent colours are the knobs to change when this site gets its own identity.
+    sidebar_bg_color = "#202020"
+    sidebar_img_border_color = "#515151"
+    sidebar_p_color = "#909090"
+    sidebar_h1_color = "#FFF"
+    sidebar_a_color = "#FFF"
+    sidebar_socials_color = "#FFF"
+    moon_sun_color = "#FFF"
+    moon_sun_background_color = "#515151"
+
+    text_color = "#222"
+    content_bg_color = "#FAF9F6"
+    post_title_color = "#303030"
+    list_color = "#5a5a5a"
+    link_color = "#f42020"
+    date_color = "#515151"
+    table_border_color = "#E5E5E5"
+    table_stripe_color = "#F9F9F9"
+
+    text_color_dark = "#eee"
+    content_bg_color_dark = "#121212"
+    post_title_color_dark = "#DBE2E9"
+    list_color_dark = "#9d9d9d"
+    link_color_dark = "#f42020"
+    date_color_dark = "#9a9a9a"
+    table_border_color_dark = "#515151"
+    table_stripe_color_dark = "#202020"
+    code_color = "#bf616a"
+    code_background_color = "#E5E5E5"
+    code_color_dark = "#ff7f7f"
+    code_background_color_dark = "#393D47"
+
+    # Comments are not set up for this site. If Remark42 is deployed later,
+    # uncomment and point it at its own host — never at tabletopflore's.
+    # remark42 = true
+    # remark42_host = "https://remark42.echoesofflore.com"
+    # remark42_site_id = "echoesofflore"
+
+[taxonomies]
+    series = 'series'
+    tags = 'tags'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Analytics intentionally unset: tabletopflore's measurement ID belongs to that
+# property, and reusing it would mix two sites in one report.
+# [services]
+#   [services.googleAnalytics]
+#     id = 'G-XXXXXXXXXX'
