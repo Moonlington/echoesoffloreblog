@@ -6,6 +6,9 @@ on:
       - main  # Set a branch to deploy
   pull_request:
 
+permissions:
+  contents: write   # required to push the gh-pages branch; new repos default to read-only
+
 jobs:
   deploy:
     runs-on: ubuntu-22.04
