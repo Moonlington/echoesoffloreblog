@@ -70,7 +70,7 @@ refLinksNotFoundURL = "/404"
     table_stripe_color_dark = "#202020"
     code_color = "#bf616a"
     code_background_color = "#E5E5E5"
-    code_color_dark = "#ff7f7f"
+    code_color_dark = "#ff8b8b"             # 4.82:1 on #393D47; #ff7f7f was 4.45:1 and failed AA
     code_background_color_dark = "#393D47"
 
     # Comments are not set up for this site. If Remark42 is deployed later,
