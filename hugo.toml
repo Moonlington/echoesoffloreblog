@@ -14,9 +14,9 @@ refLinksNotFoundURL = "/404"
     author = { name = "Flore" }
 
     brand = "Echoes of Flore"          # sidebar title
-    tagline = "Games, music and film — the stories that stay with us"
+    tagline = "The rest of the Musings"
     # 120-155 chars; this is the fallback meta description for pages that set none.
-    description = "Essays on games, music and film from Flore: what these stories do to us, why they stay, and the ones worth coming back to."
+    description = "Essays and Musings on anything Flore can write about."
     brand_image = "/img/logo.png"
     dark_mode = true
     image_zoom = true                  # medium-zoom, vendored in the theme
@@ -27,6 +27,7 @@ refLinksNotFoundURL = "/404"
 
     menu = [
         {Name = "Posts", URL = "/posts/", Pre = "Recent posts", HasChildren = true, Limit = 5},
+        {Name = "Flore's Insignificant Thoughts", URL = "https://www.tabletopflore.com/", External = true, HasChildren = false},
         # Add when the pages exist:
         # {Name = "About", URL = "/about/", HasChildren = false},
     ]
