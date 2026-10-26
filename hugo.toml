@@ -23,7 +23,7 @@ refLinksNotFoundURL = "/404"
     favicon = "/android-chrome-512x512.png"
 
     front_page_content = ["posts"]
-    og_image = "/img/ogimage.jpg"      # 1200x630 social card; front matter images/image win
+    og_image = "/img/ogimage.png"      # 1200x630 social card; front matter images/image win
 
     menu = [
         {Name = "Posts", URL = "/posts/", Pre = "Recent posts", HasChildren = true, Limit = 5},
