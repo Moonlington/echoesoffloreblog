@@ -23,6 +23,9 @@ refLinksNotFoundURL = "/404"
     favicon = "/android-chrome-512x512.png"
 
     front_page_content = ["posts"]
+    # Tag archives carry no unique copy and often duplicate each other; keep them
+    # crawlable and linked (noindex, follow) and out of the sitemap.
+    noindex_tags = true
     og_image = "/img/ogimage.png"      # 1200x630 social card; front matter images/image win
 
     menu = [
